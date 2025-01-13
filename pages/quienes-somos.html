@@ -3,40 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangaClub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <title>MangaClub</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-page">
         <header>
-            <img src="../img/logos/logo-manga-club.jpg" alt="Logo manga club">
-            <div class="header-nav-container">
-            <input type="text" name="" id=""
-                    placeholder="Buscar producto">
-            <nav>   <!-- navbar -->
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./quienes-somos.html">Quiénes Somos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./ofertas.html">Ofertas</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary px-3 py-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logos/logo-manga-club.jpg" alt="Logo manga club"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-1">
+                            <a class="nav-link fs-4" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown px-5">
+                            <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mangas</a></li>
+                                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                <li><a class="dropdown-item" href="#">Tazas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./productos.html">Todos los productos</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link fs-4 active" href="./quienes-somos.html">Quienes somos</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link fs-4" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link fs-4" href="./ofertas.html">Ofertas</a>
+                            </li>
+                        </ul>
+                        <form class="nav-item pe-1" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
             </nav>
-            </div>
-            <img src="../img/logos/carrito-de-compras.png" alt="carrito de compras" class="carrito">
         </header>
         <main>
-            <section class="quienes-somos">
-                <img src="../img/logos/trabajando.png" alt="">
-                <div>
-                    <h2>Bienvenido a Manga Club</h2>
+            <section class="container-background">
+                <div class="quienes-somos">
+                    <div>
+                        <h2>Bienvenido a Manga Club</h2>
 
-                    <p>¿Eres un fanático del manga y el anime? ¡Estás en el lugar adecuado! En Manga Club, 
-                        encontrarás una tienda friki llena de tesoros para los amantes de la cultura japonesa. Ofrecemos una variedad de artículos, 
-                        incluyendo mangas, remeras, tazas y figuras. Tenemos todo lo que necesitas para alimentar tu pasión.
-                        Nuestro objetivo es proporcionarte los mejores productos para que puedas disfrutar al máximo de tu afición. Aquí, podrás encontrar todo lo necesario para tu colección personal y llevar tu amor por el manga y el anime al siguiente nivel.
-                        Únete a nosotros en Manga Club y sumérgete en el fascinante mundo del anime y el manga. ¡Te esperamos!</p>
+                        <p>¿Eres un fanático del manga y el anime? ¡Estás en el lugar adecuado! En Manga Club, 
+                            encontrarás una tienda friki llena de tesoros para los amantes de la cultura japonesa. Ofrecemos una variedad de artículos, 
+                            incluyendo mangas, remeras, tazas y figuras. Tenemos todo lo que necesitas para alimentar tu pasión.
+                            Nuestro objetivo es proporcionarte los mejores productos para que puedas disfrutar al máximo de tu afición. Aquí, podrás encontrar todo lo necesario para tu colección personal y llevar tu amor por el manga y el anime al siguiente nivel.
+                            Únete a nosotros en Manga Club y sumérgete en el fascinante mundo del anime y el manga. ¡Te esperamos!</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -59,6 +85,7 @@
                 📞 Atención al cliente: +54 123 456 789 📧 Email: contacto@mangaclub.com © 2024 Manga Club. 
                 Todos los derechos reservados.</p>
         </footer>
-    </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
