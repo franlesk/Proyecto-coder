@@ -62,7 +62,7 @@ h2{
     margin: 10px;
     font-size: 30px;
     padding-left: 15px;
-    text-shadow: -1px -1px 0 white,
+    text-shadow: -1px -1px 0 white, 
                 1px -1px 0 white,
                 -1px 1px 0 white,
                 1px 1px 0 white;
@@ -180,7 +180,7 @@ hr {
 
 .quienes-somos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 50%;
@@ -201,6 +201,29 @@ hr {
 .quienes-somos div p{
     font-size: 20px;
     padding: 10px;
+}
+
+/* ----CONTACTO---- */
+.container-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px black;
+    background-color: #ffffff;
+}
+
+.container-contacto form{
+    width: 100%;
+    padding: 30px;
+}
+
+/* ----OFERTAS---- */
+.carousel-image{
+    width: 70%;
 }
 
 
@@ -243,6 +266,7 @@ footer h2{
     .nav-item{
         padding: 0 1.5rem !important;
         padding-top: 1rem !important;
+    }
 }
 
 @media screen and (max-width:1150px){

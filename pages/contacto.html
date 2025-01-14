@@ -19,7 +19,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item px-5">
+                            <li class="nav-item px-1">
                             <a class="nav-link fs-4" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item dropdown px-5">
@@ -27,9 +27,9 @@
                                 Productos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Mangas</a></li>
-                                <li><a class="dropdown-item" href="#">Remeras</a></li>
-                                <li><a class="dropdown-item" href="#">Tazas</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Mangas</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Remeras</a></li>
+                                <li><a class="dropdown-item" href="./productos.html">Tazas</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="./productos.html">Todos los productos</a></li>
                             </ul>
@@ -38,21 +38,39 @@
                                 <a class="nav-link fs-4" href="./quienes-somos.html">Quienes somos</a>
                             </li>
                             <li class="nav-item px-5">
-                                <a class="nav-link fs-4 active" href="./contacto.html">Contacto</a>
+                                <a class="nav-link active fs-4" href="./contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item px-5">
+                            <li class="nav-item ps-5">
                                 <a class="nav-link fs-4" href="./ofertas.html">Ofertas</a>
                             </li>
-                            <form class="nav-item px-5" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-                            </form>
                         </ul>
+                        <form class="nav-item pe-1" role="search">
+                            <input class="form-control" type="search" placeholder="Buscar producto" aria-label="Search">
+                        </form>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            
+            <div class="container-background">
+                <div class="container-contacto">
+                    <h2>Contacto</h2>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+                            <label for="exampleFormControlInput2" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
 
 
 
