@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.container-page {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar {
+  box-shadow: 0px 1px 5px;
+}
+header .navbar-brand img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+
+/* PAGE: INDEX */
+.hero {
+  text-align: center;
+  width: 100%;
+  height: 320px;
+  background-image: url("../img/logos/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 50px;
+  color: aliceblue;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.destacados {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+.destacados h2 {
+  margin: 10px;
+  font-size: 30px;
+  padding-left: 15px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+.destacados hr {
+  border: none;
+  height: 3px;
+  background-color: #000000;
+}
+.destacados .grid-destacados {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  gap: 15px;
+}
+.destacados .grid-destacados div {
+  width: 250px;
+  border: 2px solid black;
+  height: 450px;
+  text-align: center;
+  margin: 20px;
+}
+.destacados .grid-destacados div img {
+  width: 100%;
+  height: 350px;
+}
+.destacados .grid-destacados div h3 {
+  margin-bottom: 20px;
+}
+.destacados .grid-destacados div a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff640a;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* PAGE: PRODUCTOS */
+.container-precio-productos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-precio-productos .items-precio {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.container-precio-productos .items-precio ul {
+  padding-left: 0px;
+}
+.container-precio-productos .items-precio ul li {
+  list-style: none;
+  font-size: 25px;
+  margin-right: 50px;
+}
+.container-precio-productos .grid-productos {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+}
+.container-precio-productos .grid-productos div {
+  width: 250px;
+  border: 2px solid black;
+  height: 520px;
+  text-align: center;
+  margin: 20px;
+  background-color: lightgray;
+}
+.container-precio-productos .grid-productos div img {
+  width: 100%;
+  height: 350px;
+}
+.container-precio-productos .grid-productos div a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #ff640a;
+  padding: 10px;
+}
+
+/* PAGE: QUIENES SOMOS */
+.container-background {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  background-image: url("../img/logos/paisaje.jpg");
+  background-size: cover;
+}
+.container-background .quienes-somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 100px auto;
+  width: 50%;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px black;
+  background-color: #ffffff;
+}
+.container-background .quienes-somos div {
+  width: 90%;
+  height: auto;
+}
+.container-background .quienes-somos div h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.container-background .quienes-somos div p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* ----CONTACTO---- */
+.container-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px black;
+  background-color: #ffffff;
+}
+.container-contacto form {
+  width: 100%;
+  padding: 30px;
+}
+
+/* ----OFERTAS---- */
+.carousel-image {
+  width: 60%;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+}
+footer .container-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+footer .container-footer .container-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+footer .container-footer .container-logo h2 {
+  color: black;
+  margin: 10px;
+  font-size: 30px;
+  padding-left: 15px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1385px) {
+  .destacados .container-precio-productos .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+  .nav-item {
+    padding: 0 1.5rem !important;
+    padding-top: 1rem !important;
+  }
+  .carousel-image {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .destacados .grid-destacados {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-background .quienes-somos {
+    width: 80%;
+  }
+  .container-background .container-contacto {
+    width: 70%;
+  }
+  .carousel-image {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .destacados .container-precio-productos .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+}
+@media screen and (max-width: 805px) {
+  .destacados .container-precio-productos {
+    flex-direction: column;
+  }
+  .container-precio-productos .grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+  .container-precio-productos .items-precio {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-background .container-contacto {
+    width: 90%;
+  }
+  .container-background .quienes-somos div h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .destacados .grid-destacados {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 500px;
+  }
+  .destacados .container-precio-productos .grid-productos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+  }
+  .container-precio-productos .items-precio div {
+    padding-left: 0px;
+  }
+  .container-background .quienes-somos div h2 {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
