@@ -1,6 +1,6 @@
     /* Responsive */
-    @media screen and (max-width:1385px){
-        .destacados .container-precio-productos .grid-productos{
+    @media screen and (max-width:1450px){
+        .productos .container-precio-productos .grid-productos{
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: auto;
         }
@@ -13,10 +13,14 @@
         }
     }
     
-    @media screen and (max-width:1150px){
+    @media screen and (max-width:1160px){
         .destacados .grid-destacados{
             grid-template-columns: repeat(2, 1fr);
             
+        }
+        .productos .container-precio-productos .grid-productos{
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
         }
         .container-background .quienes-somos{
             width: 80%;
@@ -29,25 +33,15 @@
         }
     }
     
-    @media screen and (max-width:1100px){
-        .destacados .container-precio-productos .grid-productos{
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: auto;
-        }
-    }
-    
-    @media screen and (max-width:805px) {
-        .destacados .container-precio-productos{
+    @media screen and (max-width:870px) {
+        .productos .container-precio-productos{
             flex-direction: column;
         }
-        .container-precio-productos .grid-productos{
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: auto;
-        }
-        .container-precio-productos .items-precio{
+        .productos .container-precio-productos .items-precio{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
         }
         .container-background .container-contacto{
             width: 90%;
@@ -62,12 +56,12 @@
             grid-template-columns: repeat(1, 1fr);
             grid-auto-rows: 500px;       
         }
-        .destacados .container-precio-productos .grid-productos{
+        .productos .container-precio-productos .grid-productos{
             grid-template-columns: repeat(1, 1fr);
             grid-auto-rows: auto;
         }
-        .container-precio-productos .items-precio div{
-            padding-left: 0px;
+        .productos .container-precio-productos .items-precio h2{
+            display: none;
         }
         .container-background .quienes-somos div h2{
             font-size: 30px;
