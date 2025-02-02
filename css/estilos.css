@@ -58,7 +58,7 @@ header .navbar-brand img {
   padding-right: 30px;
 }
 .destacados h2 {
-  margin: 10px;
+  padding-top: 10px;
   font-size: 30px;
   padding-left: 15px;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
@@ -99,43 +99,69 @@ header .navbar-brand img {
 }
 
 /* PAGE: PRODUCTOS */
-.container-precio-productos {
+.productos {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 30px 0 50px;
+  background-image: url("../img/logos/paisaje.jpg");
+  background-size: cover;
+}
+.productos .container-precio-productos {
   display: flex;
   justify-content: space-evenly;
 }
-.container-precio-productos .items-precio {
+.productos .container-precio-productos .items-precio {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
+  height: fit-content;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px black;
+  margin-right: 20px;
+  padding: 20px;
 }
-.container-precio-productos .items-precio ul {
+.productos .container-precio-productos .items-precio ul {
   padding-left: 0px;
 }
-.container-precio-productos .items-precio ul li {
+.productos .container-precio-productos .items-precio ul li {
   list-style: none;
   font-size: 25px;
   margin-right: 50px;
 }
-.container-precio-productos .grid-productos {
+.productos .container-precio-productos .items-precio div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productos .container-precio-productos .grid-productos {
   width: 100%;
+  margin-bottom: 15px;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px black;
 }
-.container-precio-productos .grid-productos div {
+.productos .container-precio-productos .grid-productos div {
   width: 250px;
-  border: 2px solid black;
   height: 520px;
   text-align: center;
   margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px black;
   background-color: lightgray;
 }
-.container-precio-productos .grid-productos div img {
+.productos .container-precio-productos .grid-productos div img {
   width: 100%;
   height: 350px;
+  border-radius: 15px 15px 0px 0px;
 }
-.container-precio-productos .grid-productos div a {
+.productos .container-precio-productos .grid-productos div a {
   text-decoration: none;
   color: white;
   border-radius: 5px;

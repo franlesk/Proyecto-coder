@@ -27,7 +27,7 @@
     padding-left: 50px;
     padding-right: 30px;
     h2{
-        margin: 10px;
+        padding-top: 10px;
         font-size: 30px;
         padding-left: 15px;
         text-shadow: -1px -1px 0 white, 
@@ -72,45 +72,71 @@
     }
 }
     /* PAGE: PRODUCTOS */
-.container-precio-productos{
-    display: flex;
-    justify-content: space-evenly;
-    .items-precio{
+.productos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 30px 0 50px;
+    background-image: url("../img/logos/paisaje.jpg");
+    background-size: cover;
+    .container-precio-productos{
         display: flex;
-        flex-direction: column;
-        justify-content: start;
-        ul{
-            padding-left: 0px;
-            li{
-                list-style: none;
-                font-size: 25px;
-                margin-right: 50px;
+        justify-content: space-evenly;
+        .items-precio{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            height: fit-content;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px black;
+            margin-right: 20px;
+            padding: 20px;
+            ul{
+                padding-left: 0px;
+                li{
+                    list-style: none;
+                    font-size: 25px;
+                    margin-right: 50px;
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
-    }
-    .grid-productos{
-        width: 100%;
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: auto;
-        div{
-            width:250px;
-            border: 2px solid black;
-            height: 520px;
-            text-align: center;
-            margin: 20px;
-            background-color: lightgray;
-            img{
-                width: 100%;
-                height: 350px;
-            }
-            a{
-                text-decoration: none; 
-                color: white;
-                border-radius: 5px;
-                background-color: #ff640a;
-                padding: 10px;
+        .grid-productos{
+            width: 100%;
+            margin-bottom: 15px;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: auto;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0px 0px 30px black;
+            div{
+                width:250px;
+                height: 520px;
+                text-align: center;
+                margin: 20px;
+                border-radius: 15px;
+                box-shadow: 0px 0px 3px black;
+                background-color: lightgray;
+                img{
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 15px 15px 0px 0px;
+                }
+                a{
+                    text-decoration: none; 
+                    color: white;
+                    border-radius: 5px;
+                    background-color: #ff640a;
+                    padding: 10px;
+                }
             }
         }
     }
