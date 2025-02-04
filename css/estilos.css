@@ -16,6 +16,22 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 100%;
+}
+
+.fixed img {
+  width: 5rem;
+}
+
+.fixed:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px black;
+}
+
 header {
   position: sticky;
   top: 0px;
@@ -100,6 +116,9 @@ header .navbar-brand img {
   padding: 10px;
   border-radius: 4px;
 }
+.destacados .grid-destacados div a:hover {
+  background-color: rgb(67, 67, 67);
+}
 .destacados .grid-destacados div:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 10px black;
@@ -176,6 +195,9 @@ header .navbar-brand img {
   background-color: black;
   padding: 10px;
 }
+.productos .container-precio-productos .grid-productos div a:hover {
+  background-color: rgb(67, 67, 67);
+}
 .productos .container-precio-productos .grid-productos div:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 10px black;
@@ -210,6 +232,20 @@ header .navbar-brand img {
 .container-background .quienes-somos div p {
   font-size: 20px;
   padding: 10px;
+}
+.container-background .redes {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.container-background .redes img {
+  width: 6rem;
+  border-radius: 100%;
+  margin: 1rem;
+}
+.container-background .redes img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px black;
 }
 
 /* ----CONTACTO---- */

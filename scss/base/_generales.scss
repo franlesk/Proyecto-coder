@@ -15,3 +15,19 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
+.fixed{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 100%;
+}
+
+.fixed img{
+    width: 5rem;
+}
+
+.fixed:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}

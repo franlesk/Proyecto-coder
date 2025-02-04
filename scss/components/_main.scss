@@ -69,7 +69,9 @@
                 padding: 10px;
                 border-radius: 4px;
             }
-
+            a:hover{
+                background-color:rgb(67, 67, 67);
+            }
         }
         div:hover{
             transform: scale(1.05);
@@ -144,6 +146,9 @@
                     background-color: $color-botones;
                     padding: 10px;
                 }
+                a:hover{
+                    background-color:rgb(67, 67, 67);
+                }
             }
             div:hover{
                 transform: scale(1.05);
@@ -181,7 +186,20 @@
             }
         }
     }
-    
+    .redes{
+        display:flex;
+        justify-content: center;
+        margin: 1.5rem;
+        img{
+            width: 6rem;
+            border-radius: 100%;
+            margin: 1rem;
+        }
+        img:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 5px black;
+        }
+    }
 }
     /* ----CONTACTO---- */
 .container-contacto{
