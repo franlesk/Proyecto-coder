@@ -22,7 +22,6 @@ body {
   right: 50px;
   border-radius: 100%;
 }
-
 .fixed img {
   width: 5rem;
 }
@@ -42,10 +41,13 @@ header {
 header .navbar {
   box-shadow: 0px 1px 5px;
 }
-header .navbar-brand img {
+header .navbar .container-fluid .navbar-brand img {
   width: 80px;
   height: 80px;
   border-radius: 100px;
+}
+header .navbar .container-fluid div ul a:hover {
+  color: black;
 }
 
 /* PAGE: INDEX */
@@ -307,6 +309,7 @@ footer img {
   .nav-item {
     padding: 0 1.5rem !important;
     padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
   }
   .carousel-image {
     width: 70% !important;
@@ -364,6 +367,16 @@ footer img {
   }
   .container-background .quienes-somos div h2 {
     font-size: 30px;
+  }
+  .container-background .redes img {
+    width: 4rem;
+  }
+  .fixed {
+    bottom: 20px;
+    right: 20px;
+  }
+  .fixed img {
+    width: 3rem;
   }
 }
 
