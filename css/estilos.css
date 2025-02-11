@@ -21,6 +21,7 @@ body {
   bottom: 50px;
   right: 50px;
   border-radius: 100%;
+  transition: 0.4s ease;
 }
 .fixed img {
   width: 5rem;
@@ -103,6 +104,7 @@ header .navbar .container-fluid div ul a:hover {
   height: 450px;
   text-align: center;
   margin: 20px;
+  transition: 0.4s ease;
 }
 .destacados .grid-destacados div img {
   width: 100%;
@@ -135,6 +137,9 @@ header .navbar .container-fluid div ul a:hover {
   padding: 25px 30px 0 50px;
   background-image: url("../img/logos/paisaje.jpg");
   background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .productos .container-precio-productos {
   display: flex;
@@ -185,6 +190,7 @@ header .navbar .container-fluid div ul a:hover {
   border-radius: 15px;
   box-shadow: 0px 0px 3px black;
   background-color: lightgray;
+  transition: 0.4s ease;
 }
 .productos .container-precio-productos .grid-productos div img {
   width: 100%;
@@ -249,11 +255,14 @@ header .navbar .container-fluid div ul a:hover {
   justify-content: space-around;
   margin: 2rem;
 }
-.container-background .redes img {
+.container-background .redes a {
+  border-radius: 100%;
+}
+.container-background .redes a img {
   width: 5rem;
   border-radius: 100%;
 }
-.container-background .redes img:hover {
+.container-background .redes a img:hover {
   cursor: pointer;
   box-shadow: 0px 0px 5px black;
 }
@@ -295,13 +304,13 @@ footer .container-footer h4 {
   margin: 10px;
   font-size: 3rem;
 }
-footer img {
+footer a img {
   width: 3rem;
   height: 3rem;
   margin: 5px;
   border-radius: 15%;
   background-color: white;
-  box-shadow: 0px 0px 2px white;
+  box-shadow: 0px 0px 3px white;
 }
 footer .container-imgs {
   width: 40%;
